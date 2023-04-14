@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'Bree Serif';
+    src: url('fontes/BreeSerif-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family:'PassionOne' ;
+    src: url('fontes/PassionOne-Regular.ttf')
+    format('truetype');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(19deg,#163573,#1A5AD9);
+    margin-top: 20px;
+    
+    text-align: center;
+}
+
+img{
+    background: linear-gradient(19deg,#F25A38,#0C59F2);
+    border-radius: 50%;
+}
+main p {
+    font-family: 'Bree Serif', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    color: white;
+    padding-top: 30px;
+    
+}
+
+ul{
+    list-style: none;
+    margin-top: -10px;
+}
+ul li {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul  li  a{
+    font-family: 'Bree Serif', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(19deg,#0C59F2,#F25A38);
+    color: black ;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+a:hover{
+    color:#adadad;
+}
+footer{
+    font-family: 'PassionOne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    color: white;
+    font-size: 22px;
+}
