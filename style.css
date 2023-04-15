@@ -14,7 +14,7 @@
     padding: 0px;
 }
 body{
-    background: linear-gradient(19deg,#163573,#1A5AD9);
+    background: linear-gradient(19deg,#012262,#5680d4);
     margin-top: 20px;
     
     text-align: center;
@@ -29,6 +29,7 @@ main p {
     font-size: 32px;
     color: white;
     padding-top: 30px;
+    text-shadow: 1px 1px #000000;
     
 }
 
@@ -46,6 +47,7 @@ ul li {
 ul  li  a{
     font-family: 'Bree Serif', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(19deg,#0C59F2,#F25A38);
+    box-shadow: 2px 1px #012262;
     color: black ;
     width: 300px;
     border-radius: 5px;
