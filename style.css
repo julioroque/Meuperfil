@@ -14,13 +14,15 @@
     padding: 0px;
 }
 body{
-    background: linear-gradient(19deg,#012262,#5680d4);
+    background: linear-gradient(4deg,#010816,#034ad6);
     margin-top: 20px;
     text-align: center;
+    height: 100%;
+    
 }
 
 img{
-    background: linear-gradient(19deg,#F25A38,#0C59F2);
+    background: linear-gradient(19deg,#0b0504,#0C59F2);
     border-radius: 50%;
     padding: 4px;
     
@@ -33,6 +35,10 @@ main p {
     padding-top: 30px;
     text-shadow: 1px 1px #000000;
     
+}
+
+main #descricao{
+    font-size: 1rem;
 }
 
 ul{
@@ -48,7 +54,7 @@ ul li {
 
 ul  li  a{
     font-family: 'Bree Serif', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(19deg,#0C59F2,#F25A38);
+    background: linear-gradient(19deg,#0C59F2,#3847f2);
     box-shadow: 2px 1px #012262;
     color: black ;
     width: 300px;
