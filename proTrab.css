@@ -86,7 +86,14 @@ header .navbar ul li a {
     display: initial;
 }
 
-
+#imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#imgs img{
+    margin-bottom: 0.5rem;
+}
 
 }
 
@@ -105,6 +112,7 @@ main{
 div{
     display:inline-block;
 }
+
 
 .titulos{
     padding: 1rem;
