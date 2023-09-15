@@ -5,14 +5,14 @@
 }
 
 body{
-    background: #034ad6;
+    background: #535a69;
     height: 100%;
     
 }
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: linear-gradient(91deg,#0349d6, white);
+    background: linear-gradient(91deg,#535a69, white);
     padding: 5px;
     margin: auto;
     display: flex;
@@ -35,8 +35,8 @@ header .navbar ul li a{
     
 }
 header .navbar ul li a:hover{
-    background-color: #6e6f70;
-    color: rgb(234, 225, 225); 
+    background-color: #6e6f70cf;
+    color: #cdfe0a ; 
 }
 #menu-bar{
     display: none;   
@@ -106,6 +106,7 @@ main p {
 }
 .titulos{
     padding: 0.6rem;
+    color: #cdfe0a;
 }
 #div1img{
     display:  inline-block;

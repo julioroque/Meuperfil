@@ -36,15 +36,15 @@ header .navbar ul li a{
     
 }
 header .navbar ul li a:hover{
-    background-color: #535a69a7;
-    color: rgb(199, 235, 21); 
+    background-color: #6e6f70;
+    color: rgb(234, 225, 225); 
 }
 #menu-bar{
     display: none;   
 }
 header label {
     font-size: 1.2rem;
-    color: #6f706e;
+    color: #6e6f70;
     cursor: pointer;
      display: none;
 }
@@ -83,30 +83,23 @@ header .navbar ul li a {
 #menu-bar:checked ~.navbar{
     display: initial;
 }
-
-
-
+}
+main{
+    margin-top: 4rem;
 }
 
+main div {
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+}
 main p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
     color: white;
-    padding-top: 10px;
-    min-width: 300px;
-    max-width: 700px;
-    margin: auto;
     text-align: justify;
-    
-    
-}
-#paragrafo{
-    text-indent: 2rem;
-}
-#prim{
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
-   
+    text-indent: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
 }
 
 h1{
@@ -114,31 +107,13 @@ h1{
     margin-top: 4rem;
     text-align: center;
     color: #cdfe0a;
-    
-  
+
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    margin: 20px;
-    text-align: center;
+    text-align: left;
+    margin-left: 1rem;
     color: #cdfe0a;
-}
-
-#list2 ul{
-    text-align: justify;
-    margin: 0.6rem;
-
     
-}
-#list2 ul li{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
-    color: white;
-    padding-top: 10px;
-    min-width: 300px;
-    max-width: 700px;
-    list-style-position: inside;
-    margin: auto;
-    
+
 }
