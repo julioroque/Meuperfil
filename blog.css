@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #000000;
+    background: #6e6f70d4;
     height: 100%;  
 }
 
@@ -53,7 +53,7 @@ header label {
 
 header{
     padding: 1rem;
-    background: linear-gradient(91deg,#53569, white);
+    background: linear-gradient(91deg,#6e6f70, white);
 }
 header label{
     transition: all 0.5s;
@@ -98,8 +98,8 @@ main div {
 }
 main div p{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
-    color: white;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
     text-align: justify;
     text-indent: 1rem;
     padding: 1rem 0rem 1rem 0rem;
