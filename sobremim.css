@@ -142,12 +142,42 @@ h2{
     margin: auto;
     
 }
-footer{
+
+#rodape{
     background-color: #000000;
     height: 100%;
-    padding: 0px;
-
+    color: white;
+    
 }
-footer  a {
+#list3 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#list3 ul li{
+    padding: 10px;
+    margin-left: 1.4rem;
+    list-style: none;
+}
+#list3 a {
     text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.box{
+  
+    margin-right: 10px; 
+    padding: 10px;
+}
+
+#contato{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1.5rem;
+}
+#contato p{
+    text-align: center;
 }
