@@ -4,7 +4,7 @@
 
 :root{
     --fonte1: 'Roboto', sans-serif;
-    --fonte2: 'Fuggles', cursive;
+    --fonte2: 'Fuggles',Georgia, 'Times New Roman', Times,sans-serif;
 }
 *{
     margin: 0px;
@@ -15,6 +15,7 @@ body{
     background-color: #212529;
     font-family: var(--fonte2);
     color: white;
+    
     
 }
 /*>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<*/
@@ -49,6 +50,7 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     background-color: #212529c0;
     color: #F7B733; 
+    border-radius: 5px;
 }
 #menu-bar{
     display: none;   
@@ -72,6 +74,7 @@ header label {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    margin: 2rem;
 }
 
 #imagem{
@@ -99,9 +102,10 @@ header label {
 #secundario p{
     font-size: 1.5rem;
     margin-left: 2rem;
+    text-indent: 1rem;
+    text-align: justify;
     
 }
-
 /* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
 #rodape{
     background-color: #27323E;
@@ -205,18 +209,20 @@ header .navbar ul li a:hover{
     text-align: center;
 }
 #primario p{
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 5rem;
 }
 #secundario{
-    margin-left: 0px;
+   
+    margin: 2rem;
     
 }
 #secundario h1{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 #secundario p{
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-left: 1rem;
     text-align: justify;
     text-indent: 1rem;

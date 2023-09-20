@@ -1,23 +1,27 @@
 @charset "UTF-8";
-
+:root{
+    --fonte1: 'Roboto', sans-serif;
+    --fonte2: 'Fuggles',Georgia, 'Times New Roman', Times,sans-serif;
+}
 *{
     margin: 0px;
     padding: 0px;
 }
-
 body{
-    background: #034ad6;
+    background-color: #212529;
 }
 
+/*>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<*/
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: linear-gradient(91deg,#0349d6, white);
+    background-color: white;
     padding: 5px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content:flex-end;
+    border-radius: 10px 0px 10px 0px ;
 }
 header .navbar ul {
     list-style: none;  
@@ -30,70 +34,30 @@ header .navbar ul li a{
     font-size: 1.1rem;
     padding: 0.5rem;
     color: #000000;
+    font-weight: bold;
     display: block;
     text-decoration: none;
+    font-family: var(--fonte1);
     
 }
 header .navbar ul li a:hover{
-    background-color: #6e6f70;
-    color: rgb(234, 225, 225); 
+    background-color: #212529c0;
+    color: #F7B733; 
+    border-radius: 5px;
 }
 #menu-bar{
     display: none;   
 }
 header label {
     font-size: 1.2rem;
-    color: #6e6f70;
+    color: #000000;
     cursor: pointer;
+    font-weight: bold;
      display: none;
 }
 
-@media(max-width:650px){
 
-header{
-    padding: 1rem;
-    background: linear-gradient(91deg,#0349d6, white);
-}
-header label{
-    transition: all 0.5s;
-    display: initial;
- 
-}
-
-header .navbar{
-   position: absolute;
-    top: 100%;  right: 0;
-    background-color: #e7e9ee;
-    border-top: 1px solid rgba(91, 84, 84, 0.197);
-    display: none;
-}
-
-header .navbar ul {
-   margin-right: 5px; 
-}
-
-header .navbar ul li{
-    display: contents;
-}
-header .navbar ul li a {
-    border-top: 1px solid rgba(91, 84, 84, 0.808);
-}
-
-#menu-bar:checked ~.navbar{
-    display: initial;
-}
-
-#imgs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#imgs img{
-    margin-bottom: 0.5rem;
-}
-
-}
-
+/*>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<   */
 main{
     margin: 20px;
     text-align: center;
@@ -102,15 +66,9 @@ main{
     max-width: 700px;
     margin: auto;
 }
-
-
-
-
-div{
+#imgs{
     display:inline-block;
 }
-
-
 .titulos{
     padding: 1rem;
     margin-top: 3rem;
@@ -131,4 +89,128 @@ div{
 .links:hover{
     text-decoration: underline;
     color: aqua;
+}
+
+/* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
+#rodape{
+    background-color: #27323E;
+    height: 100%;
+    color: white;
+    border-radius: 10px 10px 0px 0px ;
+    font-family: var(--fonte1);
+    
+}
+#list3 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#list3 ul li{
+    padding: 10px;
+    margin-left: 1.4rem;
+    list-style: none;
+}
+#list3 a {
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.box{
+  
+    margin-right: 10px; 
+    padding: 10px;
+}
+
+#contato{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1rem;
+}
+#contato p{
+    text-align: center;
+    font-weight: bold;
+}
+
+      /*>>>>>>>>>>>>>>>>TROCA DE TAMANHO DE TELA <<<<<<<<<<<*/
+@media(max-width:743px){
+
+        header{
+            padding: 1rem;
+            background-color: white;
+        }
+        header label{
+            display: initial;
+         
+        }
+        header label:hover{
+            color: #F7B733;
+        }
+        
+        
+        header .navbar{
+           position: absolute;
+            top: 100%;  right: 0;
+            background-color: #e7e9ee;
+            border-top: 1px solid rgba(91, 84, 84, 0.197);
+            display: none;
+        }
+        
+        header .navbar ul {
+           margin-right: 5px; 
+           
+        }
+        
+        header .navbar ul li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border-top: 1px solid rgba(91, 84, 84, 0.174);
+        }
+        header .navbar ul li:hover{
+            background-color: #212529c0;
+            color: #F7B733; 
+            
+        }
+        header .navbar ul li a:hover{
+            background-color: transparent;
+        }
+        #menu-bar:checked ~.navbar{
+            display: initial;
+        }
+        
+        
+        #container_2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #primario{
+            
+            text-align: center;
+        }
+        #primario p{
+            font-size: 1.5rem;
+            margin-bottom: 5rem;
+        }
+        #secundario{
+           
+            margin: 2rem;
+            
+        }
+        #secundario h1{
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        #secundario p{
+            font-size: 1.1rem;
+            margin-left: 1rem;
+            text-align: justify;
+            text-indent: 1rem;
+            max-width: 500px;
+          }
 }
