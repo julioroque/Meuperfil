@@ -3,7 +3,8 @@
 
 
 :root{
-    --fonte:font-family: 'Roboto', sans-serif;
+    --fonte1: 'Roboto', sans-serif;
+    --fonte2: 'Fuggles', cursive;
 }
 *{
     margin: 0px;
@@ -12,10 +13,11 @@
 
 body{
     background-color: #212529;
-    font-family: var(--fonte);
+    font-family: var(--fonte2);
     color: white;
     
 }
+/*>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<*/
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -41,6 +43,7 @@ header .navbar ul li a{
     font-weight: bold;
     display: block;
     text-decoration: none;
+    font-family: var(--fonte1);
     
 }
 header .navbar ul li a:hover{
@@ -52,12 +55,13 @@ header .navbar ul li a:hover{
 }
 header label {
     font-size: 1.2rem;
-    color: #6f706e;
+    color: #000000;
     cursor: pointer;
+    font-weight: bold;
      display: none;
 }
 
-/*MAIN */
+/*>>>>>>>>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<<<<<<<<<<<< */
 .container_1{
     display:flex;
     align-items: center;
@@ -73,10 +77,10 @@ header label {
 #imagem{
     background: linear-gradient(180deg,#FC4A1A,#F7B733);
     border-radius: 50%;
-    padding: 4px;
+    padding: 0.2rem;
 }
 
-#principal p{
+#primario p{
     margin-top: 2rem;
     text-align: center;
     font-size: 30px;
@@ -95,14 +99,16 @@ header label {
 #secundario p{
     font-size: 1.5rem;
     margin-left: 2rem;
+    
 }
 
-/* RODAPE */
+/* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
 #rodape{
     background-color: #27323E;
     height: 100%;
     color: white;
     border-radius: 10px 10px 0px 0px ;
+    font-family: var(--fonte1);
     
 }
 #list3 ul{
@@ -140,20 +146,8 @@ header label {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:682px){
+      /*>>>>>>>>>>>>>>>>TROCA DE TAMANHO DE TELA <<<<<<<<<<<*/
+@media(max-width:743px){
 
 header{
     padding: 1rem;
@@ -164,7 +158,7 @@ header label{
  
 }
 header label:hover{
-    color: #FC4A1A;
+    color: #F7B733;
 }
 
 
@@ -201,16 +195,31 @@ header .navbar ul li a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+#container_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#primario{
+    
+    text-align: center;
+}
+#primario p{
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+#secundario{
+    margin-left: 0px;
+    
+}
+#secundario h1{
+    font-size: 1.5rem;
+}
+#secundario p{
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-align: justify;
+    text-indent: 1rem;
+    max-width: 500px;
+}
 }
