@@ -15,8 +15,6 @@ body{
     background-color: #212529;
     font-family: var(--fonte2);
     color: white;
-    
-    
 }
 /*>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<*/
 header{
@@ -107,47 +105,35 @@ header label {
     
 }
 /* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
-#rodape{
+.rodape{
     background-color: #27323E;
-    height: 100%;
+    border-radius: 5px 5px 0px 0px;
     color: white;
-    border-radius: 10px 10px 0px 0px ;
     font-family: var(--fonte1);
+    font-weight:500;
+    width: 100vw;
+}
+.conteiner_lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lista2 {
+    display:flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 1rem;
     
 }
-#list3 ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#list3 ul li{
-    padding: 10px;
-    margin-left: 1.4rem;
-    list-style: none;
-}
-#list3 a {
+#lista2 li a{
     text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin: 1rem;
     color: white;
-    font-weight: bold;
 }
+#lista2 li a:hover{
+    color: #F7B733;
 
-.box{
-  
-    margin-right: 10px; 
-    padding: 10px;
-}
-
-#contato{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding-bottom: 1rem;
-}
-#contato p{
-    text-align: center;
-    font-weight: bold;
 }
 
       /*>>>>>>>>>>>>>>>>TROCA DE TAMANHO DE TELA <<<<<<<<<<<*/
