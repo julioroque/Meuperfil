@@ -3,8 +3,11 @@
 
 
 :root{
-    --fonte1: 'Roboto', sans-serif;
-    --fonte2: 'Fuggles',Georgia, 'Times New Roman', Times,sans-serif;
+    --fonte1: 'Yanone Kaffeesatz', sans-serif;
+    --fonte2: 'Domine','Gill Sans','Trebuchet MS', serif;
+    --fonte3: 'Roboto Slab', serif;
+    
+    
 }
 *{
     margin: 0px;
@@ -13,7 +16,6 @@
 
 body{
     background-color: #212529;
-    font-family: var(--fonte2);
     color: white;
 }
 /*>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<*/
@@ -36,13 +38,14 @@ header .navbar ul li{
     float: left;  
 }
 header .navbar ul li a{
-    font-size: 1.1rem;
+    font-family: var(--fonte1);
+    font-size: 1.4rem;
     padding: 0.5rem;
     color: #000000;
     font-weight: bold;
     display: block;
     text-decoration: none;
-    font-family: var(--fonte1);
+   
     
 }
 header .navbar ul li a:hover{
@@ -82,6 +85,7 @@ header label {
 }
 
 #primario p{
+    font-family: var(--fonte2);
     margin-top: 2rem;
     text-align: center;
     font-size: 30px;
@@ -96,8 +100,10 @@ header label {
 #secundario h1{
     font-size: 50px;
     color: #FC4A1A;
+    font-family: var(--fonte2);
 }
 #secundario p{
+    font-family: var(--fonte3);
     font-size: 1.5rem;
     margin-left: 2rem;
     text-indent: 1rem;
@@ -164,18 +170,20 @@ header .navbar ul {
    margin-right: 5px; 
    
 }
-
 header .navbar ul li{
+    width: 100%;
+    border-top: 1px solid rgba(91, 84, 84, 0.174);
+}
+header .navbar ul li a{
+    font-family: var(--fonte1);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    border-top: 1px solid rgba(91, 84, 84, 0.174);
 }
 header .navbar ul li:hover{
     background-color: #212529c0;
     color: #F7B733; 
-    
 }
 header .navbar ul li a:hover{
     background-color: transparent;

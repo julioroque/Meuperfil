@@ -1,22 +1,28 @@
 @charset "UTF-8";
+:root{
+    --fonte1: 'Yanone Kaffeesatz', sans-serif;
+    --fonte2: 'Domine','Gill Sans','Trebuchet MS', serif;
+    --fonte3: 'Roboto Slab', serif;
+}
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
-    background: #034ad6;
+    background: #212529;
     height: 100vh;
+    color: white;
 }
-
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: linear-gradient(91deg,#0349d6, white);
+    background-color: white;
     padding: 5px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content:flex-end;
+    font-family: var(--fonte2);
 }
 header .navbar ul {
     list-style: none;  
@@ -26,16 +32,19 @@ header .navbar ul li{
     float: left;  
 }
 header .navbar ul li a{
-    font-size: 1.1rem;
+    font-family: var(--fonte1);
+    font-size: 1.4rem;
     padding: 0.5rem;
     color: #000000;
+    font-weight: bold;
     display: block;
     text-decoration: none;
     
 }
 header .navbar ul li a:hover{
-    background-color: #6e6f70;
-    color: rgb(234, 225, 225); 
+    background-color: #212529c0;
+    color: #F7B733; 
+    border-radius: 5px;
 }
 #menu-bar{
     display: none;   
@@ -47,42 +56,8 @@ header label {
      display: none;
 }
 
-@media(max-width:650px){
 
-header{
-    padding: 1rem;
-    background: linear-gradient(91deg,#0349d6, white);
-}
-header label{
-    transition: all 0.5s;
-    display: initial;
- 
-}
-
-header .navbar{
-   position: absolute;
-    top: 100%;  right: 0;
-    background-color: #e7e9ee;
-    border-top: 1px solid rgba(91, 84, 84, 0.197);
-    display: none;
-}
-
-header .navbar ul {
-   margin-right: 5px; 
-}
-
-header .navbar ul li{
-    display: contents;
-}
-header .navbar ul li a {
-    border-top: 1px solid rgba(91, 84, 84, 0.808);
-}
-
-#menu-bar:checked ~.navbar{
-    display: initial;
-}
-}
-
+/*>>>>>>>>>>>>>>>>>> MANIN <<<<<<<<<<<<<<<<<*/
 main{
     margin-top: 4rem;
     margin-left : 1rem;
@@ -92,32 +67,109 @@ main{
 
 #atencao{
     color: rgb(237, 13, 13);
-    font-size: 15px;
+    font-size: 1.5rem;
 }
-
 .titulos{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:var(--fonte2);
     font-size: 20px;
     margin-top: 15px;
 }
 .subtitulos{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:var(--fonte2);
     font-size: 20px;
     margin: 20px;
 }
-.list2{
+.lista2{
     text-align: justify;
-
-    
 }
-.list2 li{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-    color: white;
+.lista2 li{
+    font-family: var(--fonte3);
+    font-size: 1.1rem;
     padding-top: 10px;
     min-width: 300px;
     max-width: 700px;
     list-style-position: inside;
     margin: auto;
-    
+    list-style: none;
 }
+     /*>>>>>>>>>>>>>>>>TROCA DE TAMANHO DE TELA <<<<<<<<<<<*/
+     @media(max-width:743px){
+
+        header{
+            padding: 1rem;
+            background-color: white;
+        }
+        header label{
+            display: initial;
+         
+        }
+        header label:hover{
+            color: #F7B733;
+        }
+        
+        
+        header .navbar{
+           position: absolute;
+            top: 100%;  right: 0;
+            background-color: #e7e9ee;
+            border-top: 1px solid rgba(91, 84, 84, 0.197);
+            display: none;
+        }
+        
+        header .navbar ul {
+           margin-right: 5px; 
+           
+        }
+        header .navbar ul li{
+            width: 100%;
+            border-top: 1px solid rgba(91, 84, 84, 0.174);
+        }
+        header .navbar ul li a{
+            font-family: var(--fonte1);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header .navbar ul li:hover{
+            background-color: #212529c0;
+            color: #F7B733; 
+        }
+        header .navbar ul li a:hover{
+            background-color: transparent;
+        }
+        #menu-bar:checked ~.navbar{
+            display: initial;
+        }
+        
+        
+        #container_2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #primario{
+            
+            text-align: center;
+        }
+        #primario p{
+            font-size: 1.5rem;
+            margin-bottom: 5rem;
+        }
+        #secundario{
+           
+            margin: 2rem;
+            
+        }
+        #secundario h1{
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        #secundario p{
+            font-size: 1.1rem;
+            margin-left: 1rem;
+            text-align: justify;
+            text-indent: 1rem;
+            max-width: 500px;
+        }
+        }

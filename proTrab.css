@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root{
-    --fonte1: 'Roboto', sans-serif;
+    --fonte1: 'Roboto','Times New Roman' ,sans-serif;
     --fonte2: 'Fuggles',Georgia, 'Times New Roman', Times,sans-serif;
 }
 *{
@@ -59,7 +59,7 @@ header label {
 
 /*>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<   */
 main{
-    margin: 20px;
+    
     text-align: center;
     height: 100%;
     min-width: 300px;
@@ -67,17 +67,30 @@ main{
     margin: auto;
 }
 #imgs{
-    display:inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.imgDeCima{
+    margin: 0.2rem;
+}
+#imgDeBaixo{
+    background-color: #F7B733;
+    padding: 1px;
+    border-radius: 3px;
 }
 .titulos{
     padding: 1rem;
     margin-top: 3rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:var(--fonte1);
     color: white;
 
 }
 
 .paragrafos{
+    font-family: var(--fonte2);
+    font-size: 1.4rem;
     padding: 0.5rem;
     color: white;
     
@@ -86,11 +99,16 @@ main{
 .links{
     color: #FC4A1A;
     text-decoration: none;
+    font-size: 1rem;
 }
 .links:hover{
     text-decoration: underline;
-    color: aqua;
+    color: #F7B733;
 }
+#espaço{
+    margin-bottom: 3rem;
+}
+
 
 /* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
 #rodape{
@@ -166,11 +184,16 @@ main{
         }
         
         header .navbar ul li{
+            width: 100%;
+            border-top: 1px solid rgba(91, 84, 84, 0.174);
+        }
+        header .navbar ul li a{
+            font-family: var(--fonte1);
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            border-top: 1px solid rgba(91, 84, 84, 0.174);
+
         }
         header .navbar ul li:hover{
             background-color: #212529c0;
