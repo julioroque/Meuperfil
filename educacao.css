@@ -1,23 +1,28 @@
 @charset "UTF-8";
+:root{
+    --fonte1: 'Yanone Kaffeesatz', sans-serif;
+    --fonte2: 'Domine','Gill Sans','Trebuchet MS', serif;
+    --fonte3: 'Roboto Slab', serif;
+}
 *{
     margin: 0px;
     padding: 0px;
 }
-
 body{
-    background: #535a69;
+    background: #27323E;
     height: 100%;
-    
 }
+/*>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<*/
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: linear-gradient(91deg,#535a69, white);
+    background-color: white;
     padding: 5px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content:flex-end;
+    border-radius: 10px 0px 10px 0px ;
 }
 header .navbar ul {
     list-style: none;  
@@ -27,63 +32,31 @@ header .navbar ul li{
     float: left;  
 }
 header .navbar ul li a{
-    font-size: 1.1rem;
+    font-family: var(--fonte1);
+    font-size: 1.4rem;
     padding: 0.5rem;
     color: #000000;
+    font-weight: bold;
     display: block;
     text-decoration: none;
-    
 }
 header .navbar ul li a:hover{
-    background-color: #6e6f70cf;
-    color: #cdfe0a ; 
+    background-color: #212529c0;
+    color: #F7B733; 
+    border-radius: 5px;
 }
 #menu-bar{
     display: none;   
 }
 header label {
     font-size: 1.2rem;
-    color: #6e6f70;
+    color: #000000;
     cursor: pointer;
+    font-weight: bold;
      display: none;
 }
 
-@media(max-width:650px){
-
-header{
-    padding: 1rem;
-    background: linear-gradient(91deg,#0349d6, white);
-}
-header label{
-    transition: all 0.5s;
-    display: initial;
- 
-}
-
-header .navbar{
-   position: absolute;
-    top: 100%;  right: 0;
-    background-color: #e7e9ee;
-    border-top: 1px solid rgba(91, 84, 84, 0.197);
-    display: none;
-}
-
-header .navbar ul {
-   margin-right: 5px; 
-}
-
-header .navbar ul li{
-    display: contents;
-}
-header .navbar ul li a {
-    border-top: 1px solid rgba(91, 84, 84, 0.808);
-}
-
-#menu-bar:checked ~.navbar{
-    display: initial;
-}
-}
-
+/* >>>>>>>>>>>>>>>>>>>>>MAIN <<<<<<<<<<<<<<<<*/
 main{
     text-align: center;
     margin-top: 4rem;
@@ -93,27 +66,155 @@ main{
     max-width: 700px;
     margin: auto;
 }
-
-
 main p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3rem;
     color: white;
     padding-top: 10px;
     text-align: center;
+    text-align: justify;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 .titulos{
     padding: 0.6rem;
-    color: #cdfe0a;
+    color: white;
 }
 #div1img{
     display:  inline-block;
+    margin-bottom: 5rem;
+}
+/* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
+#rodape {
+    background-color: #212529;
+    height: 100%;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.box ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-inline: 10px;
+
+}
+.box ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.contactEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#list3 a:hover {
+    color: #F7B733;
+}
+
+.box {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#contato {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+#contato p {
+    text-align: center;
+    font-weight: bold;
 }
 
 
-@media(max-width:728px){
+ /*>>>>>>>>>>>>>>>>TROCA DE TAMANHO DE TELA <<<<<<<<<<<*/
+ @media(max-width:743px){
+
+    header{
+        padding: 1rem;
+        background-color: white;
+    }
+    header label{
+        display: initial;
+     
+    }
+    header label:hover{
+        color: #F7B733;
+    }
+    
+    
+    header .navbar{
+       position: absolute;
+        top: 100%;  right: 0;
+        background-color: #e7e9ee;
+        border-top: 1px solid rgba(91, 84, 84, 0.197);
+        display: none;
+    }
+    
+    header .navbar ul {
+       margin-right: 5px; 
+       
+    }
+    header .navbar ul li{
+        width: 100%;
+        border-top: 1px solid rgba(91, 84, 84, 0.174);
+    }
+    header .navbar ul li a{
+        font-family: var(--fonte1);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header .navbar ul li:hover{
+        background-color: #212529c0;
+        color: #F7B733; 
+    }
+    header .navbar ul li a:hover{
+        background-color: transparent;
+    }
+    #menu-bar:checked ~.navbar{
+        display: initial;
+    }
+    
+    
+    #container_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #primario{
+        
+        text-align: center;
+    }
+    #primario p{
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+    }
+    #secundario{
+       
+        margin: 2rem;
+        
+    }
+    #secundario h1{
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    #secundario p{
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        text-align: justify;
+        text-indent: 1rem;
+        max-width: 500px;
+    }
 
     #div1img{
   
@@ -135,5 +236,4 @@ main p {
               background-size: 100%;
               background-repeat: no-repeat;
     }
-
-}
+    }

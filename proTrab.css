@@ -1,16 +1,16 @@
 @charset "UTF-8";
 :root{
-    --fonte1: 'Roboto','Times New Roman' ,sans-serif;
-    --fonte2: 'Fuggles',Georgia, 'Times New Roman', Times,sans-serif;
+    --fonte1: 'Yanone Kaffeesatz', sans-serif;
+    --fonte2: 'Domine','Gill Sans','Trebuchet MS', serif;
+    --fonte3: 'Roboto Slab', serif;
 }
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
-    background-color: #212529;
+    background: #27323E;
 }
-
 /*>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<*/
 header{
     position: fixed;
@@ -31,14 +31,13 @@ header .navbar ul li{
     float: left;  
 }
 header .navbar ul li a{
-    font-size: 1.1rem;
+    font-family: var(--fonte1);
+    font-size: 1.4rem;
     padding: 0.5rem;
     color: #000000;
     font-weight: bold;
     display: block;
     text-decoration: none;
-    font-family: var(--fonte1);
-    
 }
 header .navbar ul li a:hover{
     background-color: #212529c0;
@@ -55,11 +54,8 @@ header label {
     font-weight: bold;
      display: none;
 }
-
-
 /*>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<   */
 main{
-    
     text-align: center;
     height: 100%;
     min-width: 300px;
@@ -83,19 +79,20 @@ main{
 .titulos{
     padding: 1rem;
     margin-top: 3rem;
-    font-family:var(--fonte1);
+    font-family:var(--fonte2);
     color: white;
-
 }
 
 .paragrafos{
-    font-family: var(--fonte2);
+    font-family: var(--fonte3);
     font-size: 1.4rem;
     padding: 0.5rem;
     color: white;
     
 }
-
+.justifydoDoP{
+    text-align: justify;
+}
 .links{
     color: #FC4A1A;
     text-decoration: none;
@@ -108,48 +105,51 @@ main{
 #espaço{
     margin-bottom: 3rem;
 }
-
-
 /* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
-#rodape{
-    background-color: #27323E;
+#rodape {
+    background-color: #212529;
     height: 100%;
     color: white;
-    border-radius: 10px 10px 0px 0px ;
-    font-family: var(--fonte1);
-    
-}
-#list3 ul{
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte2);
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
-
-#list3 ul li{
-    padding: 10px;
-    margin-left: 1.4rem;
+.box ul{
+    display: flex;
+    gap: 20px;
     list-style: none;
+    padding-inline: 10px;
+
 }
-#list3 a {
+.box ul li a{
     text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    font-weight: bold;
+
+}
+.contactEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#list3 a:hover {
+    color: #F7B733;
 }
 
-.box{
-  
-    margin-right: 10px; 
+.box {
+    margin-right: 10px;
     padding: 10px;
 }
 
-#contato{
+#contato {
     align-items: center;
     justify-content: center;
     display: flex;
     padding-bottom: 1rem;
 }
-#contato p{
+#contato p {
     text-align: center;
     font-weight: bold;
 }

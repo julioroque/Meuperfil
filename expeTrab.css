@@ -9,8 +9,8 @@
     padding: 0px;
 }
 body{
-    background: #212529;
-    height: 100vh;
+    background: #27323E;
+    height: 100%;
     color: white;
 }
 header{
@@ -55,16 +55,13 @@ header label {
     cursor: pointer;
      display: none;
 }
-
-
-/*>>>>>>>>>>>>>>>>>> MANIN <<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>> MAIN <<<<<<<<<<<<<<<<<*/
 main{
     margin-top: 4rem;
     margin-left : 1rem;
     margin-right: 1rem;
     text-align: center;
 }
-
 #atencao{
     color: rgb(237, 13, 13);
     font-size: 1.5rem;
@@ -81,6 +78,7 @@ main{
 }
 .lista2{
     text-align: justify;
+    margin-bottom: 5rem;
 }
 .lista2 li{
     font-family: var(--fonte3);
@@ -92,8 +90,55 @@ main{
     margin: auto;
     list-style: none;
 }
+/* >>>>>>>>>>>>>>RODAPE <<<<<<<<<<<<<<<<<<*/
+#rodape {
+    background-color: #212529;
+    height: 100%;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.box ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-inline: 10px;
+}
+.box ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.contactEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#list3 a:hover {
+    color: #F7B733;
+}
+.box {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#contato {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+#contato p {
+    text-align: center;
+    font-weight: bold;
+}
      /*>>>>>>>>>>>>>>>>TROCA DE TAMANHO DE TELA <<<<<<<<<<<*/
-     @media(max-width:743px){
+@media(max-width:743px){
 
         header{
             padding: 1rem;
@@ -172,4 +217,4 @@ main{
             text-indent: 1rem;
             max-width: 500px;
         }
-        }
+}
